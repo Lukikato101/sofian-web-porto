@@ -1,5 +1,6 @@
 # Sofian Web Portfolio
 
+<<<<<<< HEAD
 A polished personal portfolio website built with React, Vite, Tailwind CSS, Flowbite, and AOS. It is designed to showcase projects, technical skills, and a contact form with a modern dark interface.
 
 ## What Changed
@@ -26,10 +27,77 @@ A polished personal portfolio website built with React, Vite, Tailwind CSS, Flow
 - AOS
 - Flowbite
 - Remixicon
+=======
+Modern personal portfolio website built with React, Vite, Tailwind CSS, and AOS animations. Designed to showcase software engineering, robotics projects, technical stack, and professional growth through a structured, responsive, and visually modern interface.
+
+---
+
+## Overview
+
+Sofian Web Portfolio is a personal branding and technical showcase platform focused on:
+
+* Software engineering
+* Robotics systems
+* Project portfolio presentation
+* Technical stack display
+* Professional contact integration
+
+This project functions as both:
+
+* Personal portfolio website
+* Engineering credibility platform
+* GitHub showcase project
+* Recruiter/client-facing digital identity
+
+---
+
+## Core Features
+
+### User Interface
+
+* Modern dark theme UI
+* Responsive desktop/mobile navigation
+* Animated mobile menu
+* Hero section with profile branding
+* About section with technical summary
+* Dynamic stack & tools section
+* Projects showcase cards
+* Contact form integration
+* Smooth scrolling navigation
+* AOS scroll animations
+
+---
+
+## Tech Stack
+
+### Frontend
+
+* React.js
+* Vite
+* Tailwind CSS
+* JavaScript (ES6+)
+
+### Animation
+
+* AOS (Animate On Scroll)
+
+### Deployment Ready
+
+* Vercel
+* Netlify
+* GitHub Pages (with config)
+
+### External Integration
+
+* FormSubmits API (contact form)
+
+---
+>>>>>>> 40f7d0c939f6b996ca453a275b52d8fab5849c41
 
 ## Project Structure
 
 ```bash
+<<<<<<< HEAD
 sofian-web-porto-main/
 ├── public/
 │   └── assets/
@@ -50,23 +118,90 @@ sofian-web-porto-main/
 ## Setup
 
 1. Install dependencies:
+=======
+sofian-web-porto/
+│── public/
+│   └── cv.pdf
+│
+│── src/
+│   ├── App.jsx
+│   ├── main.jsx
+│   ├── index.css
+│   └── data.js
+│
+│── package.json
+│── vite.config.js
+└── README.md
+```
+
+---
+
+## Main Sections
+
+### Home
+
+* Personal introduction
+* Hero image
+* CV download
+* Project CTA
+
+### About
+
+* Personal technical philosophy
+* Project stats
+* Experience summary
+* Stack & tools
+
+### Projects
+
+* Dynamic project cards
+* Tool tags
+* External links
+
+### Contact
+
+* Name/email/message form
+* FormSubmits integration
+
+---
+
+## Installation
+
+### 1. Clone Repository
+
+```bash
+git clone https://github.com/yourusername/sofian-web-porto.git
+cd sofian-web-porto
+```
+
+### 2. Install Dependencies
+>>>>>>> 40f7d0c939f6b996ca453a275b52d8fab5849c41
 
 ```bash
 npm install
 ```
 
+<<<<<<< HEAD
 2. Start the development server:
+=======
+### 3. Run Development Server
+>>>>>>> 40f7d0c939f6b996ca453a275b52d8fab5849c41
 
 ```bash
 npm run dev
 ```
 
+<<<<<<< HEAD
 3. Build for production:
+=======
+### 4. Build for Production
+>>>>>>> 40f7d0c939f6b996ca453a275b52d8fab5849c41
 
 ```bash
 npm run build
 ```
 
+<<<<<<< HEAD
 ## Notes
 
 - The `Contact Me` button now scrolls to the contact section because `public/cv.pdf` is not included in this repository.
@@ -86,6 +221,66 @@ npm run dev
 
 Open the local URL shown in the terminal to preview the portfolio website.
 
+=======
+---
+
+## Required Dependencies
+
+```bash
+npm install aos
+npm install
+```
+
+---
+
+## Example package.json Dependencies
+
+```json
+{
+  "dependencies": {
+    "react": "^18.x",
+    "react-dom": "^18.x",
+    "aos": "^2.x"
+  }
+}
+```
+
+---
+
+## Customization Guide
+
+### Update Personal Info
+
+Edit:
+
+```bash
+src/App.jsx
+```
+
+### Update Projects / Tools
+
+Edit:
+
+```bash
+src/data.js
+```
+
+### Replace CV
+
+Replace:
+
+```bash
+public/cv.pdf
+```
+
+### Replace Profile Image
+
+Update:
+
+```bash
+DataImage.HeroImage
+```
+>>>>>>> 40f7d0c939f6b996ca453a275b52d8fab5849c41
 
 ---
 

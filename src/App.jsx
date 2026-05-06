@@ -124,10 +124,18 @@ function App() {
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                   <a
+<<<<<<< HEAD
                     href="#contact"
                     className="bg-violet-700 hover:bg-violet-600 px-8 py-4 rounded-2xl font-semibold text-center transition-all duration-300"
                   >
                     Contact Me
+=======
+                    href="/cv.pdf"
+                    download
+                    className="bg-violet-700 hover:bg-violet-600 px-8 py-4 rounded-2xl font-semibold text-center transition-all duration-300"
+                  >
+                    Download CV
+>>>>>>> 40f7d0c939f6b996ca453a275b52d8fab5849c41
                   </a>
 
                   <a
