@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import DataImage, { listProyek, listTools } from "./data";
+import AIChess from "./components/AIChess";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,12 +14,29 @@ function App() {
       once: true,
       easing: "ease-in-out",
     });
+
+    // Handle hash navigation
+    const handleHashChange = () => {
+      const hash = window.location.hash;
+      if (hash) {
+        const element = document.querySelector(hash);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    };
+
+    handleHashChange(); // Handle initial load
+    window.addEventListener('hashchange', handleHashChange);
+
+    return () => window.removeEventListener('hashchange', handleHashChange);
   }, []);
 
   const navLinks = [
     { name: "Home", href: "#home" },
     { name: "About", href: "#about" },
     { name: "Projects", href: "#projects" },
+    { name: "Play", href: "#play" },
     { name: "Contact", href: "#contact" },
   ];
 
@@ -124,18 +142,10 @@ function App() {
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                   <a
-<<<<<<< HEAD
                     href="#contact"
                     className="bg-violet-700 hover:bg-violet-600 px-8 py-4 rounded-2xl font-semibold text-center transition-all duration-300"
                   >
                     Contact Me
-=======
-                    href="/cv.pdf"
-                    download
-                    className="bg-violet-700 hover:bg-violet-600 px-8 py-4 rounded-2xl font-semibold text-center transition-all duration-300"
-                  >
-                    Download CV
->>>>>>> 40f7d0c939f6b996ca453a275b52d8fab5849c41
                   </a>
 
                   <a
@@ -344,6 +354,12 @@ function App() {
           </div>
         </section>
       </main>
+
+      <section id="play" className="py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <AIChess />
+        </div>
+      </section>
     </div>
   );
 }
